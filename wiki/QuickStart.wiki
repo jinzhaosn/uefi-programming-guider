@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary 如何快速编译书中的代码.
 #labels Phase-Deploy,Phase-Implementation,Phase-Support
 
 = 编译源代码的步骤：=
