@@ -1,12 +1,12 @@
 #summary 勘误
 
 1. <a href='#robin.xu' title='感谢robin.xu'>第15页，2.1.2 配置EDK2 开发环境</a><br>
-原文 ：C:\> EDK2Edksetup.bat<br> 
-修订 ：*<font color='#ff0000'>C:\EDK2></font>* Edksetup.bat 
+<font color='#555555'>原文</font> ：C:\> EDK2Edksetup.bat<br> 
+<font color='#555555'>修订</font> ：*<font color='#ff0000'>C:\EDK2></font>* Edksetup.bat 
 
 2.<a href='#robin.xu' title='感谢robin.xu'>第7页 （2）SEC阶段执行流程</a><br>
-原文 ：2）从实模式转换到32位平坦模式（包含模式）<br>
-修订 ：2）从实模式转换到*<font color='#ff0000'>保护模式、32位平坦内存模型</font>*<br>
+<font color='#555555'>原文</font> ：2）从实模式转换到32位平坦模式（包含模式）<br>
+<font color='#555555'>修订</font> ：2）从实模式转换到*<font color='#ff0000'>保护模式、32位平坦内存模型</font>*<br>
 
 
 <br><br>
