@@ -25,8 +25,8 @@
  * 在命令行切换到EDK2根目录
  * 在命令行执行
    * {{{ edksetup.bat --nt32}}}
- * 将uefi\book\Nt32Pkg\Nt32Pkg.inc文件添加到Nt32Pkg\Nt32Pkg.dsc末尾
-   * type uefi\book\Nt32Pkg\Nt32Pkg.inc >> Nt32Pkg\Nt32Pkg.dsc
+ * 将{{{uefi\book\Nt32Pkg\Nt32Pkg.inc}}}文件添加到{{{Nt32Pkg\Nt32Pkg.dsc}}}末尾
+   * {{{type uefi\book\Nt32Pkg\Nt32Pkg.inc >> Nt32Pkg\Nt32Pkg.dsc}}}
  * 在命令行执行
    * {{{ build }}}
  
