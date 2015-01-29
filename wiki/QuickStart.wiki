@@ -4,6 +4,8 @@
 = 编译源代码的步骤：=
 
 ===EDK2源代码版本号为13087 ===
+ * 下载EDK2源代码
+   * svn co https://svn.code.sf.net/p/edk2/code/trunk/edk2 -r 13087
  * 在EDK根目录下建立uefi目录。
  * 将文件夹book复制到uefi目录。
  * 打开CMD命令行
