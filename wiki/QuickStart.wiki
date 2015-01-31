@@ -48,12 +48,12 @@
    {{{ #ifdef _NATIVE_WCHAR_T_DEFINED}}}<br>
    {{{//  #error You must specify /Zc:wchar_t- to the compiler to turn off intrinsic nwchar_t.}}}<br>
    {{{ #endif}}}<br>
- * 编译Nt32Pkg  
+ * 编译{{{Nt32Pkg}}}
    * 将{{{uefi\book\Nt32Pkg\Nt32Pkg-2.4.inc}}}文件添加到{{{Nt32Pkg\Nt32Pkg.dsc}}}末尾
      * {{{type uefi\book\Nt32Pkg\Nt32Pkg-2.4.inc >> Nt32Pkg\Nt32Pkg.dsc}}}
    * 在命令行执行
      * {{{ build -p Nt32Pkg\Nt32Pkg.dsc}}}
- * 编译AppPkg
+ * 编译{{{AppPkg}}}
    * 将{{{uefi\book\AppPkg\AppPkg-2.4.inc}}}文件添加到{{{AppPkg\AppPkg.dsc}}}末尾
      * {{{type uefi\book\AppPkg\AppPkg-2.4.inc >> AppPkg\AppPkg.dsc}}}
      * {{{ build -p AppPkg\AppPkg.dsc}}}
