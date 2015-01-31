@@ -34,4 +34,26 @@
    * {{{type uefi\book\Nt32Pkg\Nt32Pkg.inc >> Nt32Pkg\Nt32Pkg.dsc}}}
  * 在命令行执行
    * {{{ build }}}
- 
+
+ ===EDK2源代码版本号为16682 ===
+ * 下载EDK2源代码
+   * svn co https://svn.code.sf.net/p/edk2/code/trunk/edk2 -r 16682
+ * 在EDK2根目录下建立uefi目录。
+ * 将文件夹book复制到uefi目录。
+ * 打开CMD命令行
+ * 在命令行切换到EDK2根目录
+ * 在命令行执行
+   * {{{ edksetup.bat --nt32}}} 
+ * 把{{{StdLib\Include\sys\EfiCdefs.h}}}第330行注释掉
+   {{{ #ifdef _NATIVE_WCHAR_T_DEFINED}}}<br>
+   {{{//  #error You must specify /Zc:wchar_t- to the compiler to turn off intrinsic nwchar_t.}}}<br>
+   {{{ #endif}}}<br>
+ * 编译Nt32Pkg  
+   * 将{{{uefi\book\Nt32Pkg\Nt32Pkg-2.4.inc}}}文件添加到{{{Nt32Pkg\Nt32Pkg.dsc}}}末尾
+     * {{{type uefi\book\Nt32Pkg\Nt32Pkg-2.4.inc >> Nt32Pkg\Nt32Pkg.dsc}}}
+   * 在命令行执行
+     * {{{ build -p Nt32Pkg\Nt32Pkg.dsc}}}
+ * 编译AppPkg
+   * 将{{{uefi\book\AppPkg\AppPkg-2.4.inc}}}文件添加到{{{AppPkg\AppPkg.dsc}}}末尾
+     * {{{type uefi\book\AppPkg\AppPkg-2.4.inc >> AppPkg\AppPkg.dsc}}}
+     * {{{ build -p AppPkg\AppPkg.dsc}}}
