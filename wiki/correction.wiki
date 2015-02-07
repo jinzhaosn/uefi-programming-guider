@@ -8,11 +8,11 @@
 <font color='#555555'>原文</font> ：C:\> EDK2Edksetup.bat<br>
 <font color='#555555'>修订</font> ：*<font color='#ff0000'>C:\EDK2></font>* Edksetup.bat 
 
-<div>第221页，6）执行如下命令播放视频</div>
+<a>第221页，6）执行如下命令播放视频</a><br>
 <font color='#555555'>原文</font> ：{{{fs0:> testc.efi piano 2.wav}}}<br>
 <font color='#555555'>修订</font> ：{{{fs0:> testc.efi}}}<font color='#ff0000'> *{{{piano.wav}}}*</font><br> 
 
-<div>第221页，6）执行如下命令播放视频</div>
+<a>第221页，6）执行如下命令播放视频</a><br>
 <font color='#555555'>原文</font> ：“testac.efi piano2.wav”命令将会播放当前目录下的音频文件piano2.wav。<br>
 <font color='#555555'>修订</font> ：“testac.efi <font color='#ff0000'>piano.wav</font>”命令将会播放当前目录下的音频文件<font color='#ff0000'>{{{piano.wav}}}</font>。<br>
 
