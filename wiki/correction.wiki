@@ -10,7 +10,7 @@
 
 <div>第221页，6）执行如下命令播放视频</div>
 <font color='#555555'>原文</font> ：{{{fs0:> testc.efi piano 2.wav}}}<br>
-<font color='#555555'>修订</font> ：{{{fs0:> testc.efi}}} *{{{piano.wav}}}*<br> 
+<font color='#555555'>修订</font> ：{{{fs0:> testc.efi}}}<font color='#ff0000'> *{{{piano.wav}}}*</font><br> 
 
 <div>第221页，6）执行如下命令播放视频</div>
 <font color='#555555'>原文</font> ：“testac.efi piano2.wav”命令将会播放当前目录下的音频文件piano2.wav。<br>
