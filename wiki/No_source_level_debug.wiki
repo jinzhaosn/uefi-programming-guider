@@ -1,0 +1,19 @@
+#summary The solution of "No source level debug".
+
+=问题：调试时不能正确加载调试符号=
+书中讲到了如何利用{{{_asm int 3 }}}调试代码。<br>
+{{{_asm int 3}}}需要配合{{{Nt32Pkg}}}使用。也就是说通过{{{Nt32Pkg}}}编译出的.efi文件才能够调试。<br><br>
+如果你带{{{_asm int 3}}}语句的工程是通过非{{{Nt32Pkg}}}编译出来的（例如{{{AppPkg}}}），在{{{SecMain}}}模拟器中调试会导致断点停在Image.c文件如下代码中
+{{{
+Image->Status = Image->EntryPoint (ImageHandle, Image->Info.SystemTable);
+}}}
+同时在模拟器控制台你会看到<br>
+{{{ WARNING: No source level debug}}}
+
+=解决方案=
+
+在.inf文件中添加如下代码
+{{{
+[BuildOptions]
+  MSFT:DEBUG_*_IA32_DLINK_FLAGS = /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
+}}}
